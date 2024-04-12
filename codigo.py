@@ -35,7 +35,7 @@ def cargar_csv(ruta):
 def suma(matriz, eje = None):
     return np.sum(matriz, axis = eje)
 def resta(matriz, eje = None):
-    return np.substract(matriz, axis = eje)
+    return np.substract.reduce(matriz, axis = eje)
 def division(matriz, eje = None):
     return np.divide(matriz, axis = eje)
 def logaritmo(matriz, eje = None):
@@ -44,6 +44,19 @@ def promedio(matriz, eje = None):
     return np.mean(matriz, axis = eje)
 def desviacion(matriz, eje = None):
     return np.std(matriz, axis = eje)
+
+#8
+
+#9
+class Graficar:
+    def __init__(self, datos):
+        self.datos = datos
+    def graficar(self, datos):
+        plt.plot(datos)
+        plt.show()
+    
+    def graficar_h(self,datos):
+        plt.hist(datos)
 
 
 
