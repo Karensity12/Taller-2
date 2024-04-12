@@ -31,5 +31,20 @@ def cargar_mat(ruta):
 def cargar_csv(ruta):
     return pd.read_csv(ruta)
 
+#7
+def suma(matriz, eje = None):
+    return np.sum(matriz, axis = eje)
+def resta(matriz, eje = None):
+    return np.substract(matriz, axis = eje)
+def division(matriz, eje = None):
+    return np.divide(matriz, axis = eje)
+def logaritmo(matriz, eje = None):
+    return np.log(matriz, axis = eje)
+def promedio(matriz, eje = None):
+    return np.mean(matriz, axis = eje)
+def desviacion(matriz, eje = None):
+    return np.std(matriz, axis = eje)
+
+
 
 
