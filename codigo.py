@@ -21,6 +21,10 @@ print(f"Total bites:",array3.nbytes)
 #4
 array2 = np.reshape(array3,(400,30))
 
+#5
+def dataframe(array2):
+    return pd.DataFrame(array2)
+
 
 
 
