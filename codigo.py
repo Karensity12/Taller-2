@@ -4,7 +4,7 @@ import numpy as np
 import scipy.io
 
 #1
-array4 = np.random.rand(10,40,30,10)
+array4 = np.random.rand(10,40,30,100)
 
 #2
 array3 = array4.copy()[:,:,:,2]
@@ -19,6 +19,8 @@ print(f"Tipo:",array3.dtype)
 print(f"Total bites:",array3.nbytes)
 
 #4
-array2 = np.reshape(array3[2,2])
+array2 = np.reshape(array3,(400,30))
+
+
 
 
