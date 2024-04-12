@@ -18,9 +18,7 @@ print(f"Bites cada elemento:",array3.itemsize)
 print(f"Tipo:",array3.dtype)
 print(f"Total bites:",array3.nbytes)
 
-
-
-
 #4
-array2 = array3.
+array2 = np.reshape(array3[2,2])
+
 
