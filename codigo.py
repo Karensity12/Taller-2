@@ -25,6 +25,11 @@ array2 = np.reshape(array3,(400,30))
 def dataframe(array2):
     return pd.DataFrame(array2)
 
+#6
+def cargar_mat(ruta):
+    return scipy.io.loadmat(ruta)
+def cargar_csv(ruta):
+    return pd.read_csv(ruta)
 
 
 
